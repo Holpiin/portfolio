@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Нұрдәулет Холпий — Инженер-программист</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6fb;--bg2:#e9edf7;--tx:#0b1226;--mu:#56607a;--bd:rgba(11,18,38,.12);--card:rgba(255,255,255,.72);--ac:#3446e0;--ac2:#0891b2;--hot:#d97706;--stroke:rgba(11,18,38,.35);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#070b18;--bg2:#0d1428;--tx:#e9eefc;--mu:#8e9ab8;--bd:rgba(255,255,255,.1);--card:rgba(255,255,255,.045);--ac:#7c8cff;--ac2:#34d3f0;--hot:#ffb547;--stroke:rgba(180,195,255,.4);color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#070b18;--bg2:#0d1428;--tx:#e9eefc;--mu:#8e9ab8;--bd:rgba(255,255,255,.1);--card:rgba(255,255,255,.045);--ac:#7c8cff;--ac2:#34d3f0;--hot:#ffb547;--stroke:rgba(180,195,255,.4);color-scheme:dark}
+html{scroll-padding-top:calc(72px + env(safe-area-inset-top,0px));scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font:400 1.0625rem/1.65 Manrope,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;overflow-x:hidden}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--hot);outline-offset:3px;border-radius:6px}
+#glow{position:fixed;inset:0;pointer-events:none;z-index:1;background:radial-gradient(420px circle at var(--gx,50%) var(--gy,30%),color-mix(in srgb,var(--ac) 16%,transparent),transparent 70%)}
+nav{position:fixed;top:0;left:0;right:0;z-index:20;padding:calc(10px + env(safe-area-inset-top,0px)) clamp(16px,4vw,48px) 10px;display:flex;align-items:center;justify-content:space-between;backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);background:color-mix(in srgb,var(--bg) 70%,transparent);border-bottom:1px solid var(--bd)}
+.logo{font:800 1.1rem Manrope,sans-serif;text-decoration:none;letter-spacing:-.02em}
+.logo b{color:var(--hot)}
+nav ul{display:flex;gap:clamp(12px,2.5vw,30px);list-style:none;margin:0;padding:0;align-items:center}
+nav ul a{text-decoration:none;color:var(--mu);font-size:.95rem;font-weight:500;transition:color .2s}
+nav ul a:hover{color:var(--tx)}
+#theme{background:none;border:1px solid var(--bd);color:var(--tx);width:36px;height:36px;border-radius:50%;cursor:pointer;font-size:1rem}
+@media(max-width:640px){nav ul li.hm{display:none}}
+main{position:relative;z-index:2}
+.wrap{max-width:1080px;margin:0 auto;padding:0 clamp(18px,4vw,40px)}
+section{padding:clamp(64px,10vw,120px) 0}
+h2{font:800 clamp(1.9rem,4.5vw,3rem)/1.1 Manrope,sans-serif;letter-spacing:-.03em;margin:0 0 .6em}
+/* hero */
+#hero{min-height:100svh;display:flex;align-items:center;position:relative;padding:calc(90px + env(safe-area-inset-top,0px)) 0 60px;overflow:hidden}
+#bg{position:absolute;inset:0;width:100%;height:100%;z-index:0}
+#hero .wrap{position:relative;z-index:2;width:100%}
+.where{font:500 .95rem 'JetBrains Mono',ui-monospace,monospace;color:var(--ac2);margin:0 0 18px}
+.twin{position:relative;font:800 clamp(3.2rem,14.5vw,10.5rem)/.92 Manrope,sans-serif;letter-spacing:-.045em;margin:0;cursor:crosshair;user-select:none}
+.twin span{display:block}
+.twin .wire span{color:transparent;-webkit-text-stroke:1.2px var(--stroke)}
+.twin .solid{position:absolute;inset:0;pointer-events:none;-webkit-mask-image:radial-gradient(circle 190px at var(--mx,30%) var(--my,50%),#000 0,#000 45%,transparent 100%);mask-image:radial-gradient(circle 190px at var(--mx,30%) var(--my,50%),#000 0,#000 45%,transparent 100%)}
+.twin .solid span{background:linear-gradient(100deg,var(--ac),var(--ac2) 60%,var(--hot));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font:500 clamp(1.05rem,2.4vw,1.5rem) 'JetBrains Mono',ui-monospace,monospace;margin:28px 0 8px;min-height:1.6em}
+.role i{display:inline-block;width:.6ch;height:1.1em;background:var(--hot);vertical-align:-.15em;margin-left:3px;animation:bl 1s steps(1) infinite}
+@keyframes bl{50%{opacity:0}}
+.lead{max-width:56ch;color:var(--mu);margin:0 0 34px}
+.btns{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-block;padding:13px 24px;border-radius:999px;text-decoration:none;font-weight:700;border:1px solid var(--bd);transition:transform .2s,box-shadow .2s,background .2s}
+.btn.p{background:var(--tx);color:var(--bg);border-color:transparent}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 30px -10px var(--ac)}
+.hint{position:absolute;bottom:24px;left:50%;transform:translateX(-50%);z-index:2;font:.8rem 'JetBrains Mono',monospace;color:var(--mu)}
+/* about */
+.about{display:grid;grid-template-columns:1.3fr 1fr;gap:clamp(28px,6vw,72px);align-items:start}
+.about p{margin:0 0 1em;color:var(--mu)}
+.about p strong{color:var(--tx)}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--bd);border:1px solid var(--bd);border-radius:20px;overflow:hidden}
+.stats div{background:var(--bg);padding:22px 20px}
+.stats b{display:block;font:800 2.4rem/1 Manrope,sans-serif;letter-spacing:-.04em;color:var(--tx)}
+.stats span{font-size:.88rem;color:var(--mu)}
+@media(max-width:760px){.about{grid-template-columns:1fr}}
+/* stack */
+.groups{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:28px}
+.groups h3{font:700 1.05rem Manrope,sans-serif;margin:0 0 14px;color:var(--mu)}
+.chips{display:flex;flex-wrap:wrap;gap:10px}
+.chip{padding:9px 18px;border:1px solid var(--bd);border-radius:12px;background:var(--card);font:500 .95rem 'JetBrains Mono',ui-monospace,monospace;transition:transform .2s,border-color .2s,color .2s;cursor:default}
+.chip:hover{transform:translateY(-3px) rotate(-1.5deg);border-color:var(--hot);color:var(--hot)}
+/* certs */
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr));gap:20px;perspective:1100px}
+.cert{position:relative;padding:28px;border:1px solid var(--bd);border-radius:22px;background:var(--card);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transform-style:preserve-3d;transition:transform .15s ease-out,border-color .3s;overflow:hidden}
+.cert::before{content:"";position:absolute;inset:0;background:radial-gradient(320px circle at var(--cx,50%) var(--cy,0%),color-mix(in srgb,var(--ac) 22%,transparent),transparent 65%);opacity:0;transition:opacity .3s;pointer-events:none}
+.cert:hover{border-color:color-mix(in srgb,var(--ac) 60%,var(--bd))}
+.cert:hover::before{opacity:1}
+.cert time{font:500 .85rem 'JetBrains Mono',monospace;color:var(--hot)}
+.cert h3{font:800 1.3rem/1.25 Manrope,sans-serif;letter-spacing:-.02em;margin:8px 0 6px}
+.cert .by{color:var(--ac2);font-weight:700;font-size:.95rem;margin:0 0 12px}
+.cert p{margin:0;color:var(--mu);font-size:.97rem}
+.cert .id{margin-top:16px;display:inline-block;font:.8rem 'JetBrains Mono',monospace;padding:4px 10px;border-radius:8px;border:1px dashed var(--bd);color:var(--mu)}
+/* edu + contact */
+.edu{border-left:2px solid var(--ac);padding-left:24px}
+.edu h3{margin:0;font:800 1.4rem Manrope,sans-serif}
+.edu p{margin:4px 0 0;color:var(--mu)}
+.edu time{font:500 .9rem 'JetBrains Mono',monospace;color:var(--hot)}
+#contact{text-align:center}
+#contact h2{font-size:clamp(2.2rem,7vw,4.8rem)}
+.mail{display:inline-block;font:800 clamp(1.1rem,3.6vw,2rem) Manrope,sans-serif;text-decoration:none;border-bottom:3px solid var(--hot);padding-bottom:4px;word-break:break-all;transition:color .2s}
+.mail:hover{color:var(--hot)}
+.links{margin-top:28px;display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+footer{position:relative;z-index:2;text-align:center;color:var(--mu);font-size:.85rem;padding:30px 20px calc(30px + env(safe-area-inset-bottom,0px));border-top:1px solid var(--bd)}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div id="glow"></div>
+<nav>
+  <a class="logo" href="#hero" data-go="hero">Н<b>.</b>Х</a>
+  <ul>
+    <li class="hm"><a href="#about" data-go="about">Обо мне</a></li>
+    <li class="hm"><a href="#stack" data-go="stack">Стек</a></li>
+    <li><a href="#certs" data-go="certs">Сертификаты</a></li>
+    <li><a href="#contact" data-go="contact">Контакты</a></li>
+    <li><button id="theme" aria-label="Сменить тему">◐</button></li>
+  </ul>
+</nav>
+
+<main>
+<section id="hero">
+  <canvas id="bg"></canvas>
+  <div class="wrap">
+    <p class="where">Алматы, Казахстан</p>
+    <h1 class="twin" id="twin" aria-label="Нұрдәулет Холпий">
+      <div class="wire" aria-hidden="true"><span>Нұрдәулет</span><span>Холпий</span></div>
+      <div class="solid" aria-hidden="true"><span>Нұрдәулет</span><span>Холпий</span></div>
+    </h1>
+    <p class="role"><span id="typed"></span><i></i></p>
+    <p class="lead">Студент программной инженерии. Пишу на Java и Python, работаю с PostgreSQL, учусь строить цифровые двойники производств и находить узкие места в бизнес-процессах.</p>
+    <div class="btns">
+      <a class="btn p" href="#certs" data-go="certs">Смотреть сертификаты</a>
+      <a class="btn" href="#contact" data-go="contact">Связаться со мной</a>
+    </div>
+  </div>
+  <div class="hint">проведите курсором по имени</div>
+</section>
+
+<section id="about">
+  <div class="wrap about">
+    <div>
+      <h2>Обо мне</h2>
+      <p>Мне 21 год, живу в Алматы. Учусь на программной инженерии на факультете информационных технологий Алматинского технологического университета, выпуск в <strong>2027 году</strong>.</p>
+      <p>Помимо учёбы прохожу практические курсы: <strong>цифровые двойники</strong> в Казахском национальном университете имени аль-Фараби, <strong>Process Mining</strong> и <strong>имитационное моделирование</strong> в Digital Twin Lab, а также получил сертификацию <strong>Mendix Rapid Developer</strong>.</p>
+      <p>Ищу позицию инженера-программиста на полную занятость в Алматы. Готов к редким командировкам.</p>
+    </div>
+    <div class="stats">
+      <div><b data-n="4">0</b><span>сертификата в 2026 году</span></div>
+      <div><b data-n="72">0</b><span>часа курса по цифровым двойникам</span></div>
+      <div><b data-n="5">0</b><span>технологий в основном стеке</span></div>
+      <div><b data-n="2027">0</b><span>год выпуска</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="stack">
+  <div class="wrap">
+    <h2>Технологии</h2>
+    <div class="groups">
+      <div><h3>Основной стек</h3>
+        <div class="chips"><span class="chip">Java</span><span class="chip">Python</span><span class="chip">PostgreSQL</span><span class="chip">Git</span><span class="chip">HTML</span></div></div>
+      <div><h3>Инструменты и направления</h3>
+        <div class="chips"><span class="chip">PM4Py</span><span class="chip">JaamSim</span><span class="chip">Mendix</span><span class="chip">Process Mining</span><span class="chip">Digital Twins</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="certs">
+  <div class="wrap">
+    <h2>Сертификаты</h2>
+    <div class="certs">
+      <article class="cert tilt">
+        <time>05–22 мая 2026</time>
+        <h3>Создание и внедрение цифровых двойников в промышленном производстве</h3>
+        <p class="by">Казахский национальный университет имени аль-Фараби</p>
+        <p>Второй международный курс, 72 часа. Организован факультетом информационных технологий и искусственного интеллекта, кафедрой искусственного интеллекта и Big Data.</p>
+        <span class="id">№ 37-13-86</span>
+      </article>
+      <article class="cert tilt">
+        <time>17 июня 2026</time>
+        <h3>Mendix Rapid Developer Certification</h3>
+        <p class="by">Mendix</p>
+        <p>Подтверждены знания, навыки и опыт, необходимые для разработки приложений на low-code платформе Mendix на уровне Rapid Developer.</p>
+        <span class="id">№ 110857</span>
+      </article>
+      <article class="cert tilt">
+        <time>11 июня 2026</time>
+        <h3>Анализ бизнес-процессов с использованием Process Mining (PM4Py)</h3>
+        <p class="by">Digital Twin Lab</p>
+        <p>Практический проект: анализ бизнес-процессов по журналам событий, выявление узких мест и защита результатов.</p>
+      </article>
+      <article class="cert tilt">
+        <time>2026</time>
+        <h3>Имитационное моделирование производственного процесса в JaamSim</h3>
+        <p class="by">Digital Twin Lab</p>
+        <p>Построение имитационной модели производственного процесса в среде JaamSim.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="edu">
+  <div class="wrap">
+    <h2>Образование</h2>
+    <div class="edu">
+      <time>выпуск 2027</time>
+      <h3>Алматинский технологический университет</h3>
+      <p>Бакалавр, программная инженерия. Факультет информационных технологий.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="wrap">
+    <h2>Давайте работать вместе</h2>
+    <a class="mail" href="mailto:nurdauletmambar0@gmail.com">nurdauletmambar0@gmail.com</a>
+    <div class="links">
+      <a class="btn p" href="tel:+77053077905">+7 (705) 307-79-05</a>
+    </div>
+  </div>
+</section>
+</main>
+<footer>© 2026 Холпий Нұрдәулет Мамбарұлы</footer>
+
+<script>
+(function(){
+var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+var root=document.documentElement;
+// theme
+var tb=document.getElementById('theme');
+try{var t=localStorage.getItem('theme');if(t)root.setAttribute('data-theme',t)}catch(e){}
+tb.onclick=function(){var dark=getComputedStyle(root).colorScheme==='dark';var n=dark?'light':'dark';root.setAttribute('data-theme',n);try{localStorage.setItem('theme',n)}catch(e){}cols()};
+// smooth nav
+document.querySelectorAll('[data-go]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();var el=document.getElementById(a.dataset.go);if(el)el.scrollIntoView({behavior:rm?'auto':'smooth'})})});
+// typing
+var roles=['Инженер-программист','Java и Python разработчик','Цифровые двойники','Process Mining и симуляции'];
+var ty=document.getElementById('typed'),ri=0,ci=0,del=false;
+function type(){var w=roles[ri];if(rm){ty.textContent=w;return}
+ty.textContent=w.slice(0,ci);
+if(!del&&ci<w.length){ci++;setTimeout(type,70)}
+else if(!del){del=true;setTimeout(type,1500)}
+else if(ci>0){ci--;setTimeout(type,35)}
+else{del=false;ri=(ri+1)%roles.length;setTimeout(type,300)}}
+type();
+// twin reveal + glow
+var tw=document.getElementById('twin'),sol=tw.querySelector('.solid'),last=-1e5,gl=document.getElementById('glow');
+addEventListener('pointermove',function(e){gl.style.setProperty('--gx',e.clientX+'px');gl.style.setProperty('--gy',e.clientY+'px');
+var r=tw.getBoundingClientRect();if(e.clientY>r.top-120&&e.clientY<r.bottom+120){last=performance.now();sol.style.setProperty('--mx',(e.clientX-r.left)+'px');sol.style.setProperty('--my',(e.clientY-r.top)+'px')}});
+function idle(now){if(now-last>2500&&!rm){var r=tw.getBoundingClientRect(),k=now/1400;
+sol.style.setProperty('--mx',(r.width*(.5+.42*Math.sin(k)))+'px');sol.style.setProperty('--my',(r.height*(.5+.32*Math.sin(k*1.7+1)))+'px')}
+requestAnimationFrame(idle)}
+if(rm){sol.style.setProperty('--mx','50%');sol.style.setProperty('--my','50%')}else requestAnimationFrame(idle);
+// particles
+var cv=document.getElementById('bg'),cx=cv.getContext('2d'),P=[],W,H,c1,c2,mouse={x:-999,y:-999};
+function cols(){var s=getComputedStyle(root);c1=s.getPropertyValue('--ac').trim();c2=s.getPropertyValue('--ac2').trim()}
+function size(){var r=cv.parentNode.getBoundingClientRect(),d=Math.min(devicePixelRatio||1,2);W=r.width;H=r.height;cv.width=W*d;cv.height=H*d;cx.setTransform(d,0,0,d,0,0);
+var n=Math.min(90,Math.floor(W*H/14000));P=[];for(var i=0;i<n;i++)P.push({x:Math.random()*W,y:Math.random()*H,vx:(Math.random()-.5)*.35,vy:(Math.random()-.5)*.35})}
+function draw(){cx.clearRect(0,0,W,H);
+for(var i=0;i<P.length;i++){var a=P[i];if(!rm){a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>W)a.vx*=-1;if(a.y<0||a.y>H)a.vy*=-1}
+cx.globalAlpha=.7;cx.fillStyle=c2;cx.beginPath();cx.arc(a.x,a.y,1.6,0,6.3);cx.fill();
+for(var j=i+1;j<P.length;j++){var b=P[j],dx=a.x-b.x,dy=a.y-b.y,d=dx*dx+dy*dy;if(d<14400){cx.globalAlpha=(1-d/14400)*.35;cx.strokeStyle=c1;cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(b.x,b.y);cx.stroke()}}
+var mx=a.x-mouse.x,my=a.y-mouse.y,md=mx*mx+my*my;if(md<22500){cx.globalAlpha=(1-md/22500)*.6;cx.strokeStyle=getComputedStyle(root).getPropertyValue('--hot');cx.beginPath();cx.moveTo(a.x,a.y);cx.lineTo(mouse.x,mouse.y);cx.stroke()}}
+if(!rm)requestAnimationFrame(draw)}
+cols();size();draw();
+addEventListener('resize',function(){size();if(rm)draw()});
+cv.parentNode.addEventListener('pointermove',function(e){var r=cv.getBoundingClientRect();mouse.x=e.clientX-r.left;mouse.y=e.clientY-r.top});
+matchMedia('(prefers-color-scheme: dark)').addEventListener('change',cols);
+// tilt
+document.querySelectorAll('.tilt').forEach(function(el){
+el.addEventListener('pointermove',function(e){if(rm||e.pointerType==='touch')return;var r=el.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+el.style.transform='rotateY('+((x-.5)*8)+'deg) rotateX('+((.5-y)*8)+'deg) translateZ(0)';el.style.setProperty('--cx',x*100+'%');el.style.setProperty('--cy',y*100+'%')});
+el.addEventListener('pointerleave',function(){el.style.transform=''})});
+// counters
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(!e.isIntersecting)return;io.unobserve(e.target);var el=e.target,n=+el.dataset.n,s=performance.now();
+function f(now){var p=Math.min((now-s)/1400,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)));if(p<1)requestAnimationFrame(f)}
+rm?el.textContent=n:requestAnimationFrame(f)})},{threshold:.6});
+document.querySelectorAll('[data-n]').forEach(function(el){io.observe(el)});
+})();
+</script>
+</body>
+</html>
